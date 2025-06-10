@@ -42,6 +42,11 @@ A modern, user-friendly desktop application for converting multiple images into 
 - **Local-only operation** for maximum privacy
 - **Open source** - fully auditable code
 
+## 📸 Screenshots
+
+![Application Interface](screenshots/UI.png)
+*Modern Image to PDF Converter with dark theme, thumbnail preview, and advanced reordering controls*
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -65,6 +70,13 @@ A modern, user-friendly desktop application for converting multiple images into 
    ```bash
    python main.py
    ```
+
+### Alternative: Console-less Mode
+For a cleaner experience without the command prompt window:
+```bash
+python run_gui.pyw
+```
+Or simply **double-click** `run_gui.pyw` in Windows Explorer.
 
 ### Alternative: Direct Download
 1. Download the ZIP file from GitHub

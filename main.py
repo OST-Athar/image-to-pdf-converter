@@ -797,6 +797,15 @@ class ImageToPDFConverter:
 def main():
     root = tk.Tk()
     
+    # Hide console window on Windows
+    try:
+        import sys
+        if sys.platform == "win32":
+            import ctypes
+            ctypes.windll.user32.ShowWindow(ctypes.windll.kernel32.GetConsoleWindow(), 0)
+    except:
+        pass  # Silently continue if hiding console fails
+    
     # Set window icon (if available)
     try:
         root.iconbitmap(default="icon.ico")  # You can add an icon file
